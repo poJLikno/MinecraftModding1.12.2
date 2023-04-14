@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"G",
+		"S",
+		"S"
+	],
+	"key": {
+		"G": {
+			"item": "fm:green_ingot"
+		},
+		"S": {
+			"item": "minecraft:stick"
+		}
+	},
+	"result": {
+		"item": "fm:green_shovel",
+		"count": 1
+	}
+}

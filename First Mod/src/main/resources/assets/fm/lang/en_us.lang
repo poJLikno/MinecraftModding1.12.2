@@ -1,0 +1,17 @@
+#Items
+item.green_ingot.name=Green ingot
+item.greenberry.name=Greenberry
+item.greenberry_seed.name=Greenberry seed
+item.green_sword.name=Green sword
+item.green_pickaxe.name=Green pickaxe
+item.green_axe.name=Green axe
+item.green_shovel.name=Green shovel
+item.green_hoe.name=Green hoe
+
+#Blocks
+tile.green_block.name=Green block
+tile.greenberry_crop.name=Greenberry crop
+
+#Creative tabs
+itemGroup.green_combat_tab=Green combat
+itemGroup.green_misc_tab=Green misc

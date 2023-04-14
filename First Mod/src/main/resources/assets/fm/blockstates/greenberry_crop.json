@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "fm:greenberry_stage0" },
+        "age=1": { "model": "fm:greenberry_stage1" },
+        "age=2": { "model": "fm:greenberry_stage2" },
+        "age=3": { "model": "fm:greenberry_stage3" },
+        "age=4": { "model": "fm:greenberry_stage4" },
+        "age=5": { "model": "fm:greenberry_stage5" },
+        "age=6": { "model": "fm:greenberry_stage6" },
+        "age=7": { "model": "fm:greenberry_stage7" }
+    }
+}

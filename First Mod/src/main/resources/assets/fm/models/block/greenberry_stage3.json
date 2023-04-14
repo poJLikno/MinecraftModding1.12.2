@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "fm:blocks/greenberry_stage_3"
+    }
+}

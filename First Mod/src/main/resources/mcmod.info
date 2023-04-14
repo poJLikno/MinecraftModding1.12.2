@@ -1,0 +1,16 @@
+[
+{
+  "modid": "fm",
+  "name": "First Mod",
+  "description": "My first mod for minecraft.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["poJLikno"],
+  "credits": "The Forge and FML guys, for making this framework",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

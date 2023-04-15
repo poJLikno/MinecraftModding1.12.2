@@ -1,5 +1,7 @@
 package com.pojlikno.fm.blocks;
 
+import java.util.Random;
+
 import com.pojlikno.fm.FirstMod;
 import com.pojlikno.fm.init.InitBlocks;
 import com.pojlikno.fm.init.InitItems;
@@ -41,19 +43,6 @@ public class BlockGreenberryCrop extends BlockCrops implements IHasModel {
 	}
 	
 	@Override
-	public void onBlockDestroyedByPlayer(World worldIn, BlockPos pos, IBlockState state) {
-		if (!worldIn.isRemote) {
-			if (this.isMaxAge(state)) {
-				worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(InitItems.GREENBERRY, 2)));
-				worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(InitItems.GREENBERRY_SEED, 3)));
-			}
-			else {
-				worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(InitItems.GREENBERRY_SEED, 1)));
-			}
-		}
-	}
-	
-	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
 		return GREENBERRY_CROP_STATES[(state.getValue(this.getAgeProperty())).intValue()];
 	}
@@ -67,6 +56,19 @@ public class BlockGreenberryCrop extends BlockCrops implements IHasModel {
 	protected Item getCrop() {
 		return InitItems.GREENBERRY;
 	}
+	
+	@Override
+	public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
+    {
+        if (rand.nextInt(7) == 0)
+        {
+            this.checkAndDropBlock(worldIn, pos, state);
+        }
+        else
+        {
+            super.updateTick(worldIn, pos, state, rand);
+        }
+    }
 	
 	@Override
 	public void registerModels() {

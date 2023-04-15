@@ -9,7 +9,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 public class ItemGreenIngot extends Item implements IHasModel {
-	
 	public ItemGreenIngot(String name) {
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);

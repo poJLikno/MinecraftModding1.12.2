@@ -6,7 +6,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
 public class GreenCombatTab extends CreativeTabs {
-	
 	public GreenCombatTab(String label) {
 		super(label);
 	}

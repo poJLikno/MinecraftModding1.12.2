@@ -1,16 +1,16 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		"GG",
-		"GG"
+		"G G",
+		"G G"
 	],
 	"key": {
 		"G": {
 			"item": "fm:green_ingot"
-		} 
+		}
 	},
 	"result": {
-		"item": "fm:green_block",
+		"item": "fm:green_boots",
 		"count": 1
 	}
 }

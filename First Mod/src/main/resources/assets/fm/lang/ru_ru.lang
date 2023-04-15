@@ -1,0 +1,22 @@
+#Items
+item.green_ingot.name=Зелёный слиток
+item.greenberry.name=Зеленика
+item.greenberry_seed.name=Семя Зеленики
+item.green_sword.name=Зелёный Меч
+item.green_pickaxe.name=Зелёная Кирка
+item.green_axe.name=Зелёный Топор
+item.green_shovel.name=Зелёная Лопата
+item.green_hoe.name=Зелёная Мотыга
+item.green_head.name=Зелёный Шлем
+item.green_chestplate.name=Зелёный Нагрудник
+item.green_legs.name=Зелёные Штаны
+item.green_boots.name=Зелёные Ботинки
+item.green_coal.name=Зелёный Уголь
+
+#Blocks
+tile.green_block.name=Зелёный Блок
+tile.greenberry_crop.name=Посев Зеленики
+
+#Creative tabs
+itemGroup.green_combat_tab=Зелёные Оружие, Инструменты, Доспехи
+itemGroup.green_misc_tab=Зелёные вещи

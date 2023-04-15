@@ -8,9 +8,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class FurnaceRecipes {
-	
 	public static void registerRecipes() {
-		GameRegistry.addSmelting(new ItemStack(InitItems.GREEN_INGOT), new ItemStack(Items.EMERALD), 1.F);
-		GameRegistry.addSmelting(new ItemStack(InitBlocks.GREEN_BLOCK), new ItemStack(InitItems.GREEN_INGOT, 2), 1.F);
+		GameRegistry.addSmelting(new ItemStack(InitItems.GREEN_INGOT), new ItemStack(InitItems.GREEN_COAL), 1.F);
+		GameRegistry.addSmelting(new ItemStack(InitBlocks.GREEN_BLOCK), new ItemStack(InitItems.GREEN_INGOT, 4), 1.F);
 	}
 }

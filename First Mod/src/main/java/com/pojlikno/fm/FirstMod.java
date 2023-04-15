@@ -17,7 +17,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 	version = FirstModReference.VERSION, 
 	acceptedMinecraftVersions = FirstModReference.ACCEPTED_VERSIONS)
 public class FirstMod {
-	
 	@Instance(FirstModReference.MOD_ID)
 	public static FirstMod instance;
 	

@@ -9,7 +9,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemSpade;
 
 public class ItemGreenShovel extends ItemSpade implements IHasModel {
-	
 	public ItemGreenShovel(String name, ToolMaterial material) {
 		super(material);
 		this.setRegistryName(name);

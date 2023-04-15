@@ -8,7 +8,6 @@ import com.pojlikno.fm.utils.interfaces.IHasModel;
 import net.minecraft.item.ItemPickaxe;
 
 public class ItemGreenPickaxe extends ItemPickaxe implements IHasModel {
-	
 	public ItemGreenPickaxe(String name, ToolMaterial material) {
 		super(material);
 		this.setRegistryName(name);

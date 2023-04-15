@@ -5,13 +5,11 @@ import com.pojlikno.fm.init.InitItems;
 import com.pojlikno.fm.init.InitTabs;
 import com.pojlikno.fm.utils.interfaces.IHasModel;
 
-import net.minecraft.item.EnumAction;
-import net.minecraft.item.ItemFood;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-public class ItemGreenberry extends ItemFood implements IHasModel  {
-	public ItemGreenberry(String name, int amount, boolean isWolfFood) {
-		super(amount, isWolfFood);
+public class ItemGreenCoal extends Item implements IHasModel {
+	public ItemGreenCoal(String name) {
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);
 		this.setCreativeTab(InitTabs.GREEN_MISC_TAB);
@@ -20,8 +18,8 @@ public class ItemGreenberry extends ItemFood implements IHasModel  {
 	}
 	
 	@Override
-	public EnumAction getItemUseAction(ItemStack stack) {
-		return EnumAction.EAT;
+	public int getItemBurnTime(ItemStack itemStack) {
+		return 2400;
 	}
 	
 	@Override

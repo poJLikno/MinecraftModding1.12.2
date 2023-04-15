@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+			"item": "fm:green_ingot"
+        }
+    ],
+    "result": {
+        "item": "fm:greenberry_seed",
+        "count": 4
+    }
+}

@@ -8,7 +8,6 @@ import com.pojlikno.fm.utils.interfaces.IHasModel;
 import net.minecraft.item.ItemSword;
 
 public class ItemGreenSword extends ItemSword implements IHasModel {
-
 	public ItemGreenSword(String name, ToolMaterial material) {
 		super(material);
 		this.setRegistryName(name);

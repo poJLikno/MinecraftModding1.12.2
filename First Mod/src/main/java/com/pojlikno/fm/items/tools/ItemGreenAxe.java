@@ -9,7 +9,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
 
 public class ItemGreenAxe extends ItemAxe implements IHasModel {
-	
 	public ItemGreenAxe(String name, ToolMaterial material, float damage, float speed) {
 		super(material, damage - 1.f, speed - 4.f);
 		this.setRegistryName(name);

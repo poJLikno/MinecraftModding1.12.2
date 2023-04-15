@@ -14,7 +14,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
 public class BlockGreenBlock extends Block implements IHasModel {
-	
 	public BlockGreenBlock(String name, Material materialIn) {
 		super(materialIn);
 		this.setRegistryName(name);

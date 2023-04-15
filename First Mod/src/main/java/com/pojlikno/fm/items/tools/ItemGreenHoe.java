@@ -8,7 +8,6 @@ import com.pojlikno.fm.utils.interfaces.IHasModel;
 import net.minecraft.item.ItemHoe;
 
 public class ItemGreenHoe extends ItemHoe implements IHasModel {
-	
 	public ItemGreenHoe(String name, ToolMaterial material) {
 		super(material);
 		this.setRegistryName(name);

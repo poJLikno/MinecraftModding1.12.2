@@ -20,7 +20,6 @@ import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.IPlantable;
 
 public class ItemGreenberrySeed extends Item implements IHasModel, IPlantable {
-	
 	public ItemGreenberrySeed(String name) {
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);

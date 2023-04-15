@@ -1,17 +1,22 @@
 #Items
-item.green_ingot.name=Green ingot
+item.green_ingot.name=Green Ingot
 item.greenberry.name=Greenberry
-item.greenberry_seed.name=Greenberry seed
-item.green_sword.name=Green sword
-item.green_pickaxe.name=Green pickaxe
-item.green_axe.name=Green axe
-item.green_shovel.name=Green shovel
-item.green_hoe.name=Green hoe
+item.greenberry_seed.name=Greenberry Seed
+item.green_sword.name=Green Sword
+item.green_pickaxe.name=Green Pickaxe
+item.green_axe.name=Green Axe
+item.green_shovel.name=Green Shovel
+item.green_hoe.name=Green Hoe
+item.green_head.name=Green Helmet
+item.green_chestplate.name=Green Chestplate
+item.green_legs.name=Green Leggings
+item.green_boots.name=Green Boots
+item.green_coal.name=Green Coal
 
 #Blocks
-tile.green_block.name=Green block
-tile.greenberry_crop.name=Greenberry crop
+tile.green_block.name=Green Block
+tile.greenberry_crop.name=Greenberry Crop
 
 #Creative tabs
-itemGroup.green_combat_tab=Green combat
-itemGroup.green_misc_tab=Green misc
+itemGroup.green_combat_tab=Green Combat
+itemGroup.green_misc_tab=Green Misc

@@ -3,13 +3,16 @@ package com.pojlikno.fm.items;
 import com.pojlikno.fm.FirstMod;
 import com.pojlikno.fm.init.InitItems;
 import com.pojlikno.fm.init.InitTabs;
-import com.pojlikno.fm.utils.interfaces.IHasModel;
 
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.init.MobEffects;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.world.World;
 
-public class ItemGreenberry extends ItemFood implements IHasModel  {
+public class ItemGreenberry extends ItemFood {
 	public ItemGreenberry(String name, int amount, boolean isWolfFood) {
 		super(amount, isWolfFood);
 		this.setRegistryName(name);
@@ -25,7 +28,9 @@ public class ItemGreenberry extends ItemFood implements IHasModel  {
 	}
 	
 	@Override
-	public void registerModels() {
-		FirstMod.proxy.registerItemRenderer(this, 0, "inventory");
+	public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving) {
+		//entityLiving.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 1200/*1 minute*/, 15, false, false));
+		
+		return super.onItemUseFinish(stack, worldIn, entityLiving);
 	}
 }

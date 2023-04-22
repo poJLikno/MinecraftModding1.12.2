@@ -5,7 +5,6 @@ import java.util.Random;
 import com.pojlikno.fm.FirstMod;
 import com.pojlikno.fm.init.InitBlocks;
 import com.pojlikno.fm.init.InitItems;
-import com.pojlikno.fm.utils.interfaces.IHasModel;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCrops;
@@ -22,7 +21,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockGreenberryCrop extends BlockCrops implements IHasModel {
+public class BlockGreenberryCrop extends BlockCrops {
 	private static final AxisAlignedBB[] GREENBERRY_CROP_STATES = new AxisAlignedBB[] {
 			new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.125D, 1.0D), 
 			new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.25D, 1.0D), 
@@ -69,9 +68,4 @@ public class BlockGreenberryCrop extends BlockCrops implements IHasModel {
             super.updateTick(worldIn, pos, state, rand);
         }
     }
-	
-	@Override
-	public void registerModels() {
-		FirstMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
-	}
 }

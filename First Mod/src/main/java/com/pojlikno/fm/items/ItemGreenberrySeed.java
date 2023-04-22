@@ -4,7 +4,6 @@ import com.pojlikno.fm.FirstMod;
 import com.pojlikno.fm.init.InitBlocks;
 import com.pojlikno.fm.init.InitItems;
 import com.pojlikno.fm.init.InitTabs;
-import com.pojlikno.fm.utils.interfaces.IHasModel;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
@@ -19,7 +18,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.IPlantable;
 
-public class ItemGreenberrySeed extends Item implements IHasModel, IPlantable {
+public class ItemGreenberrySeed extends Item implements IPlantable {
 	public ItemGreenberrySeed(String name) {
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);
@@ -56,10 +55,5 @@ public class ItemGreenberrySeed extends Item implements IHasModel, IPlantable {
 	@Override
 	public IBlockState getPlant(IBlockAccess world, BlockPos pos) {
 		return InitBlocks.GREENBERRY_CROP.getDefaultState();
-	}
-	
-	@Override
-	public void registerModels() {
-		FirstMod.proxy.registerItemRenderer(this, 0, "inventory");
 	}
 }

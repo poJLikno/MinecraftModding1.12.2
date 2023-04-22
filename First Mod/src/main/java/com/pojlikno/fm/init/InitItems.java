@@ -3,7 +3,6 @@ package com.pojlikno.fm.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.pojlikno.fm.FirstModReference;
 import com.pojlikno.fm.items.ItemGreenCoal;
 import com.pojlikno.fm.items.ItemGreenIngot;
 import com.pojlikno.fm.items.ItemGreenberry;
@@ -14,6 +13,7 @@ import com.pojlikno.fm.items.tools.ItemGreenHoe;
 import com.pojlikno.fm.items.tools.ItemGreenPickaxe;
 import com.pojlikno.fm.items.tools.ItemGreenShovel;
 import com.pojlikno.fm.items.tools.ItemGreenSword;
+import com.pojlikno.fm.util.Reference;
 
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -40,7 +40,7 @@ public class InitItems {
 	public static final ToolMaterial GREEN_TOOL =
 			EnumHelper.addToolMaterial("green_tool", 3, 3000, 24.f, 5.f, 15).setRepairItem(new ItemStack(GREEN_INGOT));
 	public static final ArmorMaterial GREEN_ARMOR =
-			EnumHelper.addArmorMaterial("green_armor", FirstModReference.MOD_ID + ":green",
+			EnumHelper.addArmorMaterial("green_armor", Reference.MOD_ID + ":green",
 					40, new int[] { 7, 10, 12, 7 }, 15, 
 					SoundEvents.ITEM_ARMOR_EQUIP_IRON, 5.f).setRepairItem(new ItemStack(GREEN_INGOT));
 	

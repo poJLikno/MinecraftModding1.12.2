@@ -1,0 +1,16 @@
+[
+{
+  "modid": "badhabits",
+  "name": "Bad Habits mod",
+  "description": "Add some harmful things from real life.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["poJLikno"],
+  "credits": "Wiki, for information about products",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

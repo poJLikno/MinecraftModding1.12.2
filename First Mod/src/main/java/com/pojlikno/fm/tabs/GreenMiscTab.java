@@ -1,4 +1,4 @@
-package com.pojlikno.fm.misc;
+package com.pojlikno.fm.tabs;
 
 import com.pojlikno.fm.init.InitBlocks;
 

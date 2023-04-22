@@ -1,15 +1,16 @@
-package com.pojlikno.fm.utils.handlers;
+package com.pojlikno.fm.util.handlers;
 
+import com.pojlikno.fm.FirstMod;
 import com.pojlikno.fm.init.InitBlocks;
 import com.pojlikno.fm.init.InitItems;
-import com.pojlikno.fm.utils.FurnaceRecipes;
-import com.pojlikno.fm.utils.interfaces.IHasModel;
+import com.pojlikno.fm.recipes.SmeltingRecipes;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @EventBusSubscriber
@@ -27,19 +28,19 @@ public class RegisterHandler {
 	@SubscribeEvent
 	public static void onModelRegister(ModelRegistryEvent event) {
 		for (Item item : InitItems.ITEMS) {
-			if (item instanceof IHasModel) {
-				((IHasModel)item).registerModels();
-			}
+			FirstMod.proxy.registerItemRenderer(item, 0, "inventory");
 		}
 		
 		for (Block block : InitBlocks.BLOCKS) {
-			if (block instanceof IHasModel) {
-				((IHasModel)block).registerModels();
-			}
+			FirstMod.proxy.registerItemRenderer(Item.getItemFromBlock(block), 0, "inventory");
 		}
 	}
 	
-	public static void otherRegister() {
-		FurnaceRecipes.registerRecipes();
-	}
+	public static void preInitRegistries() {}
+	
+	public static void initRegistries() {}
+	
+	public static void postInitRegistries() {}
+	
+	public static void serverRegistries(FMLServerStartingEvent event) {}
 }

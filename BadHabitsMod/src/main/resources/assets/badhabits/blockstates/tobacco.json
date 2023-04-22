@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "age=0": { "model": "badhabits:tobacco_stage0" },
+        "age=1": { "model": "badhabits:tobacco_stage1" },
+        "age=2": { "model": "badhabits:tobacco_stage2" },
+        "age=3": { "model": "badhabits:tobacco_stage3" }
+    }
+}

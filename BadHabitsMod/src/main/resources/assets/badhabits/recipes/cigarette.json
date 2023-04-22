@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"PPP",
+		"TTT",
+		"PPP"
+	],
+	"key": {
+		"T": {
+			"item": "badhabits:dry_tobacco_leaves"
+		},
+		"P": {
+			"item": "minecraft:paper"
+		}
+	},
+	"result": {
+		"item": "badhabits:cigarette",
+		"count": 1
+	}
+}

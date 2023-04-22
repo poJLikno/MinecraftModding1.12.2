@@ -1,0 +1,11 @@
+# Items
+item.tobacco_seeds.name=Tobacco Seeds
+item.tobacco_leaves.name=Tobacco Leaves
+item.dry_tobacco_leaves.name=Dry Tobacco Leaves
+item.cigarette.name=Cigarette
+
+# Blocks
+tile.tobacco.name=Tobacco
+
+# Creative Tabs
+itemGroup.bad_habits_tab=Bad Habits

@@ -1,7 +1,7 @@
 package com.pojlikno.fm.init;
 
-import com.pojlikno.fm.misc.GreenCombatTab;
-import com.pojlikno.fm.misc.GreenMiscTab;
+import com.pojlikno.fm.tabs.GreenCombatTab;
+import com.pojlikno.fm.tabs.GreenMiscTab;
 
 import net.minecraft.creativetab.CreativeTabs;
 

@@ -3,6 +3,9 @@ item.tobacco_seeds.name=Tobacco Seeds
 item.tobacco_leaves.name=Tobacco Leaves
 item.dry_tobacco_leaves.name=Dry Tobacco Leaves
 item.cigarette.name=Cigarette
+item.cigarette_butt.name=Cigarette Butt
+item.cigarette_pack.name=Cigarette Pack
+item.activated_carbon.name=Activated Carbon
 
 # Blocks
 tile.tobacco.name=Tobacco

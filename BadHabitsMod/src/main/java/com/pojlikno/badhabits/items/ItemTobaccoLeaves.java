@@ -16,6 +16,7 @@ public class ItemTobaccoLeaves extends ItemFood {
 		super(amount, isWolfFood);
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);
+		this.setAlwaysEdible();
 		this.setCreativeTab(InitTabs.BAD_HABITS_TAB);
 		
 		InitItems.ITEMS.add(this);
@@ -25,9 +26,9 @@ public class ItemTobaccoLeaves extends ItemFood {
 	public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving) {
 		entityLiving.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 20, 0, false, false));
 		entityLiving.addPotionEffect(new PotionEffect(MobEffects.INSTANT_DAMAGE, 1, 0, false, false));
-		entityLiving.addPotionEffect(new PotionEffect(MobEffects.SPEED, 100, 0, false, false));
-		entityLiving.addPotionEffect(new PotionEffect(MobEffects.HASTE, 100, 0, false, false));
-		entityLiving.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 100, 0, false, false));
+		entityLiving.addPotionEffect(new PotionEffect(MobEffects.SPEED, 200, 0, false, false));
+		entityLiving.addPotionEffect(new PotionEffect(MobEffects.HASTE, 200, 0, false, false));
+		entityLiving.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 200, 0, false, false));
 		return super.onItemUseFinish(stack, worldIn, entityLiving);
 	}
 }

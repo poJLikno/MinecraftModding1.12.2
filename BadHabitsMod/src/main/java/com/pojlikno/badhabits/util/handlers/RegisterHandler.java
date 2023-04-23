@@ -5,9 +5,16 @@ import com.pojlikno.badhabits.init.InitBlocks;
 import com.pojlikno.badhabits.init.InitItems;
 
 import net.minecraft.block.Block;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.init.Enchantments;
+import net.minecraft.init.Items;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -33,6 +40,20 @@ public class RegisterHandler {
 		for (Block block : InitBlocks.BLOCKS) {
 			BadHabits.proxy.registerItemRenderer(Item.getItemFromBlock(block), 0, "inventory");
 		}
+	}
+	
+	@SubscribeEvent
+	public static void onFarmlandTrampleEvent(BlockEvent.FarmlandTrampleEvent event) {
+		Iterable<ItemStack> armorInventoryList;
+		armorInventoryList = event.getEntity().getArmorInventoryList();
+        for (ItemStack itemStack : armorInventoryList) {
+        	if (itemStack.getItem() instanceof ItemArmor) {
+        		ItemArmor amourItem = (ItemArmor)itemStack.getItem();
+        		if (amourItem.getEquipmentSlot() == EntityEquipmentSlot.FEET && amourItem == Items.LEATHER_BOOTS) {
+        			event.setCanceled(true);
+        		}
+        	} 
+        } 
 	}
 	
 	public static void preInitRegistries() {}

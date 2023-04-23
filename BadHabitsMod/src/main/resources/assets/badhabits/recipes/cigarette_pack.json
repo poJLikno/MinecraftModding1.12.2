@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CCC",
+		"CCC",
+		"PPP"
+	],
+	"key": {
+		"C": {
+			"item": "badhabits:cigarette"
+		},
+		"P": {
+			"item": "minecraft:paper"
+		}
+	},
+	"result": {
+		"item": "badhabits:cigarette_pack",
+		"count": 1
+	}
+}
